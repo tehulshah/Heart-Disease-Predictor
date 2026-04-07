@@ -13,14 +13,14 @@ st.markdown("Enter the following details to predict the likelihood of heart dise
 
 # Create input fields for each feature
 age = st.slider("Age", min_value=18, max_value=100, value=40)
-sex = st.selectbox("Sex", options=['F', 'M'])
-chest_pain = st.selectbox("Chest Pain Type", options=["ATA", "NAP", "TA", "ASY"])
+sex = st.selectbox("Sex", options=['Female', 'Male'])
+chest_pain = st.selectbox("Chest Pain Type", options=["Atypical Angina", "Non-Anginal Pain", "Typical Angina", "Asymptomatic"])
 resting_bp = st.number_input("Resting Blood Pressure (mmHg)", min_value=80, max_value=200, value=120)
 cholesterol = st.number_input("Cholesterol (mg/dl)", min_value=100, max_value=600, value=200)
 fasting_bs = st.selectbox("Fasting Blood Sugar > 120 mg/dl", options=[0, 1])
-resting_ecg = st.selectbox("Resting ECG Results", options=["Normal", "ST", "LVH"])
+resting_ecg = st.selectbox("Resting ECG Results", options=["Normal", "ST-T Wave Abnormality", "Left Ventricular Hypertrophy"])
 max_hr = st.slider("Maximum Heart Rate Achieved (bpm)", min_value=60, max_value=220, value=150)
-exercise_angina = st.selectbox("Exercise Induced Angina", options=["Y", "N"])
+exercise_angina = st.selectbox("Exercise Induced Angina", options=["Yes", "No"])
 oldpeak = st.slider("Oldpeak (ST Depression)", min_value=0.0, max_value=6.0, value=1.0)
 st_slope = st.selectbox("ST Slope", options=["Up", "Flat", "Down"])
 
