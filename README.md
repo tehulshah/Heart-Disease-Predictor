@@ -55,6 +55,7 @@ This application allows users to input key health parameters and instantly recei
 
 ## 📂 Project Structure
 ├── data/
+│ └── heart.csv
 ├── heart.ipynb
 ├── app.py
 ├── heart_disease_model.pkl
